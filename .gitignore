@@ -1,0 +1,6 @@
+*.a
+.vscode
+*.out
+.idea
+.DS_Store
+*/target
