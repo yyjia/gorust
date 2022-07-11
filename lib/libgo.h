@@ -23,6 +23,7 @@ typedef struct { const char *p; ptrdiff_t n; } _GoString_;
 
 
  #include<librust.h>
+ #include <stdlib.h>
 
 #line 1 "cgo-generated-wrapper"
 
