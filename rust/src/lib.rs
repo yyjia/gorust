@@ -14,8 +14,8 @@ pub extern "C" fn execute(address: *const libc::c_char, block_num: libc::c_int) 
             block_num,
             nonce
         );
-    };
-    0
+        nonce
+    }
 }
 
 #[cfg(test)]
@@ -27,7 +27,11 @@ mod tests {
     fn it_works() {
         assert_eq!(
             execute(CString::new("abcdefg").unwrap().into_raw(), 1234),
-            0
+            1000
+        );
+        assert_eq!(
+            execute(CString::new("xxxxxxx").unwrap().into_raw(), 1234),
+            10
         );
     }
 }

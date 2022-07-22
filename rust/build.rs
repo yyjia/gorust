@@ -1,3 +1,5 @@
+extern crate bindgen;
+
 fn main() {
     let path = "../lib";
     let lib = "go";

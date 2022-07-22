@@ -12,7 +12,7 @@ build-go:
 
 .PHONY: build-rust
 build-rust: 
-	cd rust && cargo build 
+	cd rust && cargo build --release
 	cp rust/target/release/librust.a ./lib
 
 .PHONY: run
