@@ -8,7 +8,7 @@ clean:
 
 .PHONY: build-go
 build-go: 
-	go build -buildmode=c-archive -o ./lib/libgo.a ./go
+	go build -buildmode=c-archive -o ./lib/libgo.a ./go/main.go
 
 .PHONY: build-rust
 build-rust: 
